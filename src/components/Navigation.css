@@ -3,60 +3,84 @@
     position: fixed;
     text-align: center;
     display: flex;
-    left: 40px;
-    top: 70px;
-    
-    
-    
-    
+    right: 70px;
+    top: 160px;
     text-shadow: 0 30px 52px -7px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px , rgba(0, 0, 0, 0.025);
-    border-radius: 5px;
-    
+    border-radius: 0px;
+    width: 400px;
 }
 
-@media screen and (max-width: 1090px) {
+
+
+@media screen and (max-width: 700px) {
     .nav {
-        left: initial;
+        right: initial;
         top: initial;
         bottom: 0px;
-        width: 100%;
-        
+        width: 80%;
+        display: grid;
+
+  grid-auto-rows: 100px;
     }
 }
 
 .nav a {
     text-decoration: none;
-    color: #0008fc;
+    color: white;
     text-transform: uppercase;
     font-size: 12px;
     text-align: center;
     font-weight: 600;
-    
-    
+    padding: 20px;
 }
 
-.nav button {
-    width: 150px;
-    height: 70px;
+.nav a {
+    width: 90px;
+    height: 30px;
     color: blue;
     background-color: lightcyan;
     border-color: blue;
     outline-color: purple;
     outline-style: none;
-    padding-top: 0px;
+    padding: 0px;
+}
+
+.nav :first-child {
+    background-color: yellow;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+}
+.nav :nth-child(2) {
+    background-color: green;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+}
+.nav :nth-child(3) {
+    background-color: pink;  
+    width: 70px;
+    height: 20px;
+    text-align: center;
+}
+.nav :nth-child(4) {
+    color: blue;
+    width: 70px;
+    height: 20px;
+    text-align: center;
     
 }
-.nav button:hover {
-    width: 150px;
-    height: 70px;
+
+.nav :hover {
+    width: 70px;
+    height: 20px;
     color: blue;
-    background-color: lightblue;
-    border-color: blue;
-    outline-color: purple;
     outline-style: none;
+    text-align: center;
     
 }
 
 .nav a:not(:last-child) {
     margin-bottom: 20px;
 }
+

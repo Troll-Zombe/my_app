@@ -3,12 +3,12 @@
         0 -6px 16px -6px rgba(0, 0, 0, 0.025);
     padding: 20px;
     border-radius: 5px;
-    background-color: aliceblue;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 300px;
     width: 100%;
-    max-width: 315px;
+    max-width: 400px;
     font-weight: 300;
+    text-align: center;
 }
 
 .Home__container span:first-child {
