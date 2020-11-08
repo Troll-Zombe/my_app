@@ -4,7 +4,7 @@
     justify-content: center;
     top: 150px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    grid-template-columns: repeat(1, minmax(400px, 1fr));
     margin: 0 auto;
 }
 
@@ -15,29 +15,39 @@
     padding-top: 100px;
     
     text-decoration: none;
-    left: 300px;
+    left: 300px; 
+    display: flex;
+    flex-direction: row;
     
 }
 
 .soyo {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
     padding-left: 300px;
     padding-top: 200px;
 
 }
 
-.soyo-logo {
-    
-    box-sizing: 100px, 100px;
+.soyo img {
+    width: 140px;
+    height: 100px;
 }
 
 
 .nomad_coder {
     display: flex;
-    flex-direction:unset;
+    flex-direction: row;
     box-sizing: border-box;
     padding-left: 300px;
-    padding-top: 200px;
+    padding-top: 20px;
+    background-color: lightgray;
+}
+
+.nomad_coder img {
+    width: 130px;
+    height : 100px;
 }
 
 @media screen and (max-width: 1900px) {
@@ -47,8 +57,19 @@
         bottom: 0px;
         width: 80%;
         display: grid;
-
+    
 
   grid-auto-rows: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nomad_coder {
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .soyo {
+        padding-left: 10px;
     }
 }
