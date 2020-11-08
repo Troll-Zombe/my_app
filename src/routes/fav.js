@@ -1,7 +1,7 @@
 
 import React from 'react'
 import './fav.css'
-import logo from './Main_Logo.png';
+import logo from '.g/Main_Logo.png';
 
 function fav(fav) {
     console.log(fav);
