@@ -1,6 +1,7 @@
 
 import React from 'react'
 import './fav.css'
+import logo from './Main_Logo.png';
 
 function fav(fav) {
     console.log(fav);
@@ -9,7 +10,7 @@ function fav(fav) {
             
             
             <div className="soyo">
-                <span><img  src = "https://datacdn.soyo.or.kr/wcont/uploads/2016/02/19155900/Main_Logo1.png"/></span>
+                <span><img  src = {logo}/></span>
                 <span><h1><a href="https://www.soyo.or.kr/">협동조합 소요</a></h1> 
                 <h4>↳디지털시대의 교육 공동체, 협동조합 소요</h4></span>
             </div>
